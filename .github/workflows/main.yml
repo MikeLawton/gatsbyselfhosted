@@ -25,14 +25,14 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - name: Check out latest codee
-        uses: actions/checkout
+      - name: Check out latest code
+        uses: actions/checkout@v2
 
       # Grab the required version of NodeJS
       - name: Set Node.js
-        uses: actions/setup-node
+        uses: actions/setup-node@v2.2.0
         with:
-          node-version: 16.15.x
+          node-version: 14.x
 
       # Install all the Node dependencies for Gatsby, using your package.json file.
       - name: Install Dependencies
