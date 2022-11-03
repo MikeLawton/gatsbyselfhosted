@@ -26,13 +26,13 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - name: Check out latest code
-        uses: actions/checkout@v2
+        uses: actions/checkout
 
       # Grab the required version of NodeJS
       - name: Set Node.js
-        uses: actions/setup-node@v2.2.0
+        uses: actions/setup-node
         with:
-          node-version: 14.x
+          node-version: 16.15.x
 
       # Install all the Node dependencies for Gatsby, using your package.json file.
       - name: Install Dependencies
